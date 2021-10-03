@@ -8,7 +8,7 @@ Python >= 3.7
 License: MIT
 """
 
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 __license__ = 'MIT'
 
 import random
@@ -27,10 +27,10 @@ class Avatar:
     def __init__(self, seed: str, size: int = 150,
                  avatar_colors: Sequence = AVATAR_COLORS, background_colors: Sequence = BACKGROUND_COLORS,
                  blackout: bool = True, is_round: bool = True):
-        random.seed(seed)
+        self.rng = random.Random(seed)
         self.size = size
-        self.avatar_color = random.choice(avatar_colors)
-        self.background_color = random.choice(background_colors)
+        self.avatar_color = self.rng.choice(avatar_colors)
+        self.background_color = self.rng.choice(background_colors)
         self.blackout = blackout
         self.is_round = is_round
         self.avatar = None
@@ -41,14 +41,13 @@ class Avatar:
             BROWS
         ]
 
-    @staticmethod
-    def optional(shapes) -> Sequence:
-        if random.randrange(100) < 50:
+    def optional(self, shapes) -> Sequence:
+        if self.rng.randrange(100) < 50:
             return shapes
         return (EMPTY_SHAPE, )
 
     def set_avatar(self) -> None:
-        self.avatar = ''.join(map(lambda shape: random.choice(shape)(self.avatar_color), self.shapes))
+        self.avatar = ''.join(map(lambda shape: self.rng.choice(shape)(self.avatar_color), self.shapes))
 
     def create_avatar(self) -> str:
         self.set_avatar()
