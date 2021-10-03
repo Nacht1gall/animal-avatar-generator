@@ -1,4 +1,4 @@
-from utils.colors import darken
+from animal_avatar.utils.colors import darken
 
 MUZZLES = (
     lambda color:

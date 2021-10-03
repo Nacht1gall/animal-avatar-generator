@@ -1,6 +1,6 @@
 from setuptools import setup
 
-import animal_avatar
+from src import animal_avatar
 
 setup(
     name='animal_avatar',
@@ -8,8 +8,6 @@ setup(
     description='SVG avatar generator.',
     long_description=animal_avatar.__doc__,
     author_email='johnherbertdillinger@ukr.net',
-    py_modules=['animal_avatar'],
-    scripts=['animal_avatar.py'],
     license='MIT',
     platforms='any',
     url='https://github.com/Nacht1gall/animal-avatar-generator',

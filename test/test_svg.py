@@ -3,7 +3,7 @@ from xml.etree import ElementTree
 import unittest
 
 from animal_avatar import Avatar
-from shapes import (
+from animal_avatar.shapes import (
     EMPTY_SHAPE, BROWS, EARS,
     EYES, FACES, HAIRS,
     MUZZLES, PATTERNS

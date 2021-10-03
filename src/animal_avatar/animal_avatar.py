@@ -14,13 +14,13 @@ __license__ = 'MIT'
 import random
 from typing import Sequence
 
-from palette import AVATAR_COLORS, BACKGROUND_COLORS
-from shapes import (
+from animal_avatar.palette import AVATAR_COLORS, BACKGROUND_COLORS
+from animal_avatar.shapes import (
     EMPTY_SHAPE, BROWS, EARS,
     EYES, FACES, HAIRS,
     MUZZLES, PATTERNS
 )
-from utils.svg import create_svg, create_background, create_blackout
+from animal_avatar.utils.svg import create_svg, create_background, create_blackout
 
 
 class Avatar:
