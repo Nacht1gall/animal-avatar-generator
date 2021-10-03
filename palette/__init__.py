@@ -1,0 +1,1 @@
+from .consts import AVATAR_COLORS, BACKGROUND_COLORS
