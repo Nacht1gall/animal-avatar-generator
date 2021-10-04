@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='animal_avatar',
-    version='0.0.3',
+    version='0.0.4',
     description='SVG avatar generator.',
     long_description=
     """
