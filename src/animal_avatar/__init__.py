@@ -1,1 +1,3 @@
-from .animal_avatar import Avatar, __version__, __license__
+
+from .animal_avatar import Avatar
+

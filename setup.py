@@ -1,12 +1,17 @@
 from setuptools import setup
 
-from src import animal_avatar
-
 setup(
     name='animal_avatar',
-    version=animal_avatar.__version__,
+    version='0.0.2',
     description='SVG avatar generator.',
-    long_description=animal_avatar.__doc__,
+    long_description=
+    """
+    Python implementation of Animal Avatar Generator
+    (https://github.com/roma-lukashik/animal-avatar-generator).
+    Python >= 3.7
+
+    License: MIT
+    """,
     author_email='johnherbertdillinger@ukr.net',
     license='MIT',
     platforms='any',

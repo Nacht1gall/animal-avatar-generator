@@ -1,16 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
-Python implementation of Animal Avatar Generator
-(https://github.com/roma-lukashik/animal-avatar-generator).
-Python >= 3.7
-
-License: MIT
-"""
-
-__version__ = '0.0.2'
-__license__ = 'MIT'
-
 import random
 from typing import Sequence
 
