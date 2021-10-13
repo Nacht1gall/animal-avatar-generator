@@ -33,6 +33,3 @@ svg = avatar.create_avatar()
 from cairosvg import svg2png
 svg2png(bytestring=svg, write_to='test.png')
 ```
-
-<h2>TODO</h2>
-* Implement the same randomization algorithm as in the original
